@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pm"
+version = "0.1.0"
+description = ""
+authors = ["Adam Sznabel <adamsznabel@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10.5"
+typer = "^0.6.1"
+pydantic = "^1.9.2"
+pony = "^0.7.16"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
