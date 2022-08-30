@@ -1,8 +1,8 @@
-from typing import List
-
-from pony.orm import db_session, select, delete
-from .models import Program
 import datetime
+
+from pony.orm import db_session, select
+
+from .models import Program, Project
 
 
 @db_session
@@ -39,3 +39,8 @@ def get_programs_id(name: str):
 @db_session
 def delete_more(query_object):
     pass
+
+
+@db_session
+def get_all_projects():
+    return select(pr for pr in Project)[:]
