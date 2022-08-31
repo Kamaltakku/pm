@@ -1,9 +1,9 @@
 from cli import run
-from settings.settings import load_settings_from_file
+from pm.settings.settings import Settings
 
 if __name__ == "__main__":
-    settings = load_settings_from_file('settings.cfg')
-
+    settings = Settings()
+    print(settings.port)
     run.app()
 
-    print("TODO -> need implementation")
+    # TODO -> need implementation
